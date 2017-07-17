@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<title>Home Page</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="font/css/font-awesome.min.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+   <div class="container">
+       
+       <div class="alert alert-danger">
+          <h1>Welcome To Application Home Page</h1>
+       </div>
+       <div class="col-xs-offset col-xs-8">
+          
+          <br/>
+          <p>Click <a th:href="@{/esparkUserPage}">here</a> to Login</p>
+       </div>
+   
+   </div>
+
+</body>
+
+</html>

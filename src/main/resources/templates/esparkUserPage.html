@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<title>User Page</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="font/css/font-awesome.min.css" />
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+	<div class="jumbotron">
+
+		<div class="container">
+
+			<div class="alert alert-info">
+				<h1 th:inline="text">Welcome To ESPark
+					[[${#httpServletRequest.remoteUser}]]!</h1>
+			</div>
+
+
+			<form th:action="@{/logout}" method="post">
+				<input type="submit" class="btn btn-primary btn-lg btn-block"
+					value="LogOut" />
+			</form>
+
+		</div>
+	</div>
+
+</body>
+
+
+</html>
